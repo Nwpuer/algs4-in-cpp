@@ -19,11 +19,6 @@ public:
         for (size_t i = 0; i < n; ++i)
             sz.push_back(1);
     }
-    WeightedQuickUnionUF(const WeightedQuickUnionUF &) = default;
-    WeightedQuickUnionUF &operator=(const WeightedQuickUnionUF &) = default;
-    WeightedQuickUnionUF(WeightedQuickUnionUF &&) noexcept = default;
-    WeightedQuickUnionUF &operator=(WeightedQuickUnionUF &&) = default;
-    ~WeightedQuickUnionUF() = default;
 
     size_t Count() const {
         return count;
