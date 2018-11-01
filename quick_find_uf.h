@@ -15,11 +15,6 @@ public:
         for (size_t i = 0; i < n; ++i)
             id.push_back(i);
     }
-    QuickFindUF(const QuickFindUF &) = default;
-    QuickFindUF &operator=(const QuickFindUF &) = default;
-    QuickFindUF(QuickFindUF &&) noexcept = default;
-    QuickFindUF &operator=(QuickFindUF &&) = default;
-    ~QuickFindUF() = default;
 
     size_t Count() const {
         return count;
