@@ -15,11 +15,6 @@ public:
         for (size_t i = 0; i < n; ++i)
             id.push_back(i);
     }
-    QuickUnionUF(const QuickUnionUF &) = default;
-    QuickUnionUF &operator=(const QuickUnionUF &) = default;
-    QuickUnionUF(QuickUnionUF &&) noexcept = default;
-    QuickUnionUF &operator=(QuickUnionUF &&) = default;
-    ~QuickUnionUF() = default;
 
     size_t Count() const {
         return count;
