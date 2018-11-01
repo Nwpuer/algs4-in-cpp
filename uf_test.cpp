@@ -6,7 +6,7 @@
 
 int main() {
     std::ifstream in("../data/tinyUF.txt");
-    std::cin.rdbuf(in.rdbuf());//重定向cin
+    std::cin.rdbuf(in.rdbuf());
 
     //QuickFindUF::MainTest();
     //QuickUnionUF::MainTest();
