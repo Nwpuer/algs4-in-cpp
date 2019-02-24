@@ -173,7 +173,7 @@ size_t partition(std::vector<T> &a, size_t lo, size_t hi) {
         while(a[++i] < v) 
             if (i == hi) break;
         while(v < a[--j]) 
-            if (i == lo) break;
+            if (j == lo) break;
         if (i >= j) break;
         swap(a[i], a[j]);
     }
