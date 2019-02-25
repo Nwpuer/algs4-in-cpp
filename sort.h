@@ -189,7 +189,7 @@ void sink(std::vector<T> &a, int k, int N);
 template<typename T>
 void HeapSort(std::vector<T> &a) {//这里的排序的下标从1开始的，下标为0的元素未参与排序，所以不能再用前面的isSorted()来判断是否排序成功
     using std::swap;
-    auto N = a.size();
+    auto N = a.size() - 1;
     for (int k = N/2; k >= 1; --k)
         sink(a, k, N);
     while (N > 1) {
