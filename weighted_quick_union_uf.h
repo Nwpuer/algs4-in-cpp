@@ -46,7 +46,7 @@ public:
 
         if (sz[pRoot] < sz[qRoot]) {
             id[pRoot] = qRoot;
-            sz[pRoot] += sz[qRoot];
+            sz[qRoot] += sz[pRoot];
         }
         else {
             id[qRoot] = pRoot;
